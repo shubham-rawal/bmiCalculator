@@ -21,9 +21,10 @@ const kTitleTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 const kResultTextStyle = TextStyle(
-  fontSize: 25.0,
+  fontSize: 22.0,
   color: Color(0xff24d876),
   fontWeight: FontWeight.bold,
+  letterSpacing: 2.0,
 );
 
 const kBMITextStyle = TextStyle(
@@ -31,7 +32,12 @@ const kBMITextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
-const kBodyTextStyle = TextStyle(fontSize: 25.0);
+const kNormalBMITextStyle = TextStyle(
+  fontSize: 22.0,
+  color: Colors.white38,
+);
+
+const kBodyTextStyle = TextStyle(fontSize: 22.0, color: Colors.white);
 
 const kBottomContainerHeight = 80.0;
 const kActiveCardColor = Color(0xFF1D1E33);
