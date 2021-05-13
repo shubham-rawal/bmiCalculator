@@ -4,6 +4,13 @@ import '../components/reusable_card.dart';
 import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
+  ResultsPage(
+      {@required this.bmiResult,
+      @required this.resultText,
+      @required this.interpretation});
+  final String bmiResult;
+  final String resultText;
+  final String interpretation;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,17 +41,34 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'NORMAL',
+                    resultText.toUpperCase(),
                     style: kResultTextStyle,
                   ),
                   Text(
-                    '18.6',
+                    bmiResult,
                     style: kBMITextStyle,
                   ),
                   Text(
-                    'Obese hai bhai tu',
+                    interpretation,
                     textAlign: TextAlign.center,
                     style: kBodyTextStyle,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Normal BMI Range :',
+                        style: kNormalBMITextStyle,
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        '18.5 - 25 kg/m\u00B2',
+                        style: kBodyTextStyle,
+                      ),
+                    ],
                   ),
                 ],
               ),
