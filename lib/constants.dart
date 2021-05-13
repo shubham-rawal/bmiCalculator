@@ -10,6 +10,29 @@ final kNumberTextStyle = GoogleFonts.lato(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
 );
+
+final kBottomButtonTextStyle = TextStyle(
+  fontSize: 30.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kTitleTextStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+const kResultTextStyle = TextStyle(
+  fontSize: 25.0,
+  color: Color(0xff24d876),
+  fontWeight: FontWeight.bold,
+);
+
+const kBMITextStyle = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kBodyTextStyle = TextStyle(fontSize: 25.0);
+
 const kBottomContainerHeight = 80.0;
 const kActiveCardColor = Color(0xFF1D1E33);
 const kInactiveCardColor = Color(0xFF111328);
