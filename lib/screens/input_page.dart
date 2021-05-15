@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bmi_calculator/screens/results_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -24,6 +26,8 @@ class _InputPageState extends State<InputPage> {
   int weight = 60;
   int age = 25;
   int flag = 0;
+
+  Timer timer;
 
   Gender selectedGender;
 
