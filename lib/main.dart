@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'screens/input_page.dart';
+import 'screens/splash_screen.dart';
 
 void main() => runApp(BMICalculator());
+
+int flag = 0;
 
 class BMICalculator extends StatelessWidget {
   @override
@@ -11,7 +13,7 @@ class BMICalculator extends StatelessWidget {
         primaryColor: Color(0xFF0A0E21),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-      home: InputPage(),
+      home: SplashScreen(),
     );
   }
 }
