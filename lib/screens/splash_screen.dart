@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'input_page.dart';
 import 'package:bmi_calculator/constants.dart';
 import 'dart:async';
-import 'package:bmi_calculator/main.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,14 +13,11 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), () {
-      if (flag == 0) {
-        flag = 1;
-        Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => InputPage()),
-          (Route route) => false,
-        );
-      }
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => InputPage()),
+        (Route route) => false,
+      );
     });
   }
 

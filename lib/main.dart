@@ -3,8 +3,6 @@ import 'screens/splash_screen.dart';
 
 void main() => runApp(BMICalculator());
 
-int flag = 0;
-
 class BMICalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
