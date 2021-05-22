@@ -11,7 +11,7 @@ The finished app is a Body Mass Index Calculator inspired by a beautiful UI desi
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
 
 ## Things I have learned through this tutorial
-
+>As I am new to Dart & Flutter, this section summarises the concepts i have learnt through this module.
 - How to use Flutter themes to create coherent branding. 
 - How to create multi-page apps using Flutter Routes and Navigator.
 - How to extract and refactor Flutter Widgets with a click of the button. 
@@ -22,6 +22,8 @@ The finished app is a Body Mass Index Calculator inspired by a beautiful UI desi
 - Understand Dart Enums and the Ternary Operator.
 - Learn about composition vs. inheritance and the Flutter way of creating custom UI.
 - Understand the difference between const and final in Dart and when to use each.
+- Understanding how Stacks work in Dart.
+- Using Navigation & Routes to display a ONE-TIME opening splash screen (currently for a fixed duration of 5 seconds).
 
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
